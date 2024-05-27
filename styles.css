@@ -16,7 +16,7 @@ body {
     margin: 20px auto;
     padding: 20px;
     background: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
 
@@ -24,6 +24,23 @@ body {
 .main-content {
     flex: 3;
     margin-right: 20px;
+}
+
+header {
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #4CAF50;
+    margin-right: 20px;
+}
+
+header h2 {
+    margin: 0; /* Reset default margin */
+    padding: 0;
 }
 
 .main-content section {
@@ -43,13 +60,31 @@ body {
     padding-left: 10px;
 }
 
+.section-content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.section-content ul li {
+    margin-bottom: 5px;
+}
+
+.section-content ul li span {
+    font-weight: bold;
+}
+
 /* Right sidebar styles */
 .sidebar {
     flex: 1;
     background: #f5f5f5;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar section {
+    margin-bottom: 20px;
+    animation: fadeInLeft 1s ease-in;
 }
 
 .sidebar h2 {
@@ -63,7 +98,6 @@ body {
 .sidebar ul {
     list-style-type: none;
     padding: 0;
-    animation: fadeInLeft 1s ease-in;
 }
 
 .sidebar ul li {
@@ -91,33 +125,73 @@ footer p {
 
 /* Animations */
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes slideInDown {
-    from { transform: translateY(-20px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 @keyframes fadeInUp {
-    from { transform: translateY(20px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 @keyframes fadeInLeft {
-    from { transform: translateX(-20px); opacity: 0; }
-    to { transform: translateX(0); opacity: 1; }
+    from {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 @keyframes fadeInRight {
-    from { transform: translateX(20px); opacity: 0; }
-    to { transform: translateX(0); opacity: 1; }
+    from {
+        transform: translateX(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 @keyframes slideInUp {
-    from { transform: translateY(20px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 /* Achievements styles */
@@ -136,6 +210,7 @@ footer p {
 }
 
 .achievements ul {
+    list-style-type: none;
     padding-left: 20px;
 }
 
